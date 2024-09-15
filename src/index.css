@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: inherit;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: #f5f5f5;
+  margin: 0;
+  color: #1b1b1b;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 30rem;
+}
+
+.album-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.album-title.open {
+  background-color: #E9EDAD; 
+}
+
+details > summary {
+  height: 60px;
+  padding: 4px;
+  width: 30rem;
+  border: none;
+  box-shadow: 1px 1px 1px #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  width: 30rem;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 1px #bbbbbb;
+}
